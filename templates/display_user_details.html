@@ -1,0 +1,24 @@
+{% extends 'dummy.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+    <center>
+        <h1>{{UO.username}}</h1>
+        <h5>{{UO.password}}</h5>
+        <h1>{{PO.username}}</h1>
+        <h1>{{PO.address}}</h1>
+        <h1>{{PO.profile_pic}}</h1>
+        <img src="{{PO.profile_pic.url}}" alt="no image found">
+
+
+    </center>
+
+    {% endblock %}
+</body>
+</html>

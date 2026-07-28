@@ -1,0 +1,19 @@
+{% extends 'dummy.html' %}
+
+{% block content %}
+
+<center>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="newusn">Enter Username</label>
+        <input type="text" name="newusn" id="">
+        <br>
+        <br>
+        <input type="submit" value="submit" class="btn btn-danger">
+    </form>
+</center>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'dummy.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+    <title>home page</title>
+    {% endblock %}
+</head>
+<body>
+
+    {% block content %}
+
+    <center>
+
+        {% if user.is_authenticated %}
+        <h1>welcome to home page- {{user.username}}</h1>
+        {% else %}
+        <h2>welcome to home page</h2>
+        {% endif %}
+        
+            </center>
+
+            {%  endblock %}
+</body>
+</html>
